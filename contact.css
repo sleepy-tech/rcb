@@ -1,0 +1,158 @@
+
+/* Reset some default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header styles */
+header {
+  background-color:#da1818 ; /* RCB red */
+  color: white;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 60px;
+  margin-right: 15px;
+  border-radius: 50%;
+}
+
+.logo h1 {
+  font-size: 24px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  color: #ffd700; /* gold hover */
+}
+
+/* Contact Section */
+.contact {
+  max-width: 800px;
+  margin: 40px auto;
+  background: white;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.contact h2 {
+  text-align: center;
+  color: #da1818;
+  margin-bottom: 15px;
+}
+
+.contact p {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 16px;
+}
+
+/* Contact form styles */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  resize: vertical;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color:  #da1818;
+  box-shadow: 0 0 5pxrgba(210, 0, 46, 0.3);
+}
+
+.contact-form button {
+  background-color:  #da1818;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color:  #da1818;
+}
+
+/* Social links */
+.social {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.social p {
+  margin-bottom: 10px;
+}
+
+.social a {
+  text-decoration: none;
+  color: #da1818;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.social a:hover {
+  color:  #da1818;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+  }
+
+  .contact {
+    margin: 20px;
+    padding: 20px;
+  }
+}
